@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './App.css';
 
 class StopWatch extends React.Component {
   initialState = {
@@ -37,9 +37,10 @@ clearInterval(this.intervalID);
   render() {
     return (
 
-    <div>
-      <label>{this.state.lapse} ms</label>
-      <button onClick={this.handleRunClick}>{this.state.running ? 'Stop' : 'Start'}</button>
+    <div className="center App">
+      <label className="time-digits">{this.state.lapse}</label><span style={{color: 'white'}}> ms</span>
+    <br />
+      <button onClick={this.handleRunClick} className='start'>{this.state.running ? 'Stop' : 'Start'}</button>
       <button onClick={this.handleClearClick}>Clear</button>
     </div>
     )
