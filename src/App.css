@@ -9,6 +9,7 @@
   margin: auto;
   padding: 1em;
   background-color: black;
+  border: 6px solid silver;
 }
 .center {
   text-align: center;
